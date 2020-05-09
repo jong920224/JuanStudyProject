@@ -1,5 +1,4 @@
 
-
 import java.io.IOException;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -20,7 +19,8 @@ public class Chapter6 extends HttpServlet {
     public Chapter6() {
         super();
         System.out.println("init");
-        // TODO Auto-generated constructor stub
+		// TODO Auto-generated constructor stub
+		// 2020 Test
     }
 
 	/**
