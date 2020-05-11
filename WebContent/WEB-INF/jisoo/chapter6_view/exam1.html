@@ -2,12 +2,16 @@
 <html lang="ko"> 
 <head> 
 	<meta charset="utf-8"> 
-	<title>웹페이지 제목</title> 
+	<title>예제 1번</title> 
 </head>
 <body>
-	<form name ="frmLogin" method="post" action="login" encType="utf-8">
-		아이디 : <input type="text" name="usr_id">	
-		비밀번호 : <input type="password" name="usr_pw">
+	<!--  
+		method : get	url
+			   : post	body 
+	-->
+	<form name ="frmLogin" method="get" action="login" encType="utf-8">
+		아이디 : <input type="text" name="user_id">	
+		비밀번호 : <input type="password" name="user_pw">
 		<input type="submit" value="로그인">
 	</form>
 </body>
