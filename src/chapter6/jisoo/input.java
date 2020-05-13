@@ -39,6 +39,9 @@ public class input extends HttpServlet {
 		}
 	}
 
+	/**************
+	 ** Post 방식 
+	 **************/
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 		// 예제 3번
