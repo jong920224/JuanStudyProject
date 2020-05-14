@@ -1,6 +1,8 @@
 package chapter6.jisoo;
 
 import java.io.IOException;
+
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -26,8 +28,13 @@ public class chapter6_jisoo extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		response.getWriter().append("Served at: ").append(request.getContextPath());
+		String param = (String) request.getParameter("param");
+		String testURL = "/WEB-INF/jisoo/chapter6_view/" + param + ".html";
+		
+		RequestDispatcher dispatcher = null;
+		dispatcher = request.getRequestDispatcher(testURL);
+		
+		dispatcher.forward(request, response);
 	}
 
 	/**

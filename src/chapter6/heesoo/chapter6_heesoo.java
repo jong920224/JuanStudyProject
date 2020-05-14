@@ -19,7 +19,7 @@ public class chapter6_heesoo extends HttpServlet {
      * Default constructor. 
      */
     public chapter6_heesoo() {
-    	System.out.println("init �޼ҵ�");
+    	System.out.println("init �޼ҵ�");
         // TODO Auto-generated constructor stub
     }
 
@@ -38,5 +38,7 @@ public class chapter6_heesoo extends HttpServlet {
 		// TODO Auto-generated method stub
 		doGet(request, response);
 	}
+
+	//책 사야한다.
 
 }
