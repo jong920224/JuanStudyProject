@@ -21,12 +21,12 @@ public class login extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 		// HttpServletRequest
-		// À¥ ºê¶ó¿ìÀú¿¡¼­ Àü¼ÛÇÑ Á¤º¸¸¦ ÅèÄ¹ ÄÁÅ×ÀÌ³Ê°¡ HttpServletRequest °´Ã¼¸¦ »ý¼ºÇÑ ÈÄ doGetÀ¸·Î ³Ñ°ÜÁÜ
+		// ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ä¹ ï¿½ï¿½ï¿½ï¿½ï¿½Ì³Ê°ï¿½ HttpServletRequest ï¿½ï¿½Ã¼ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ doGetï¿½ï¿½ï¿½ï¿½ ï¿½Ñ°ï¿½ï¿½ï¿½
 		
-		// Àü¼Û µÉ µ¥ÀÌÅÍ¸¦ UTF-8·Î ÀÎÄÚµù
+		// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Í¸ï¿½ UTF-8ï¿½ï¿½ ï¿½ï¿½ï¿½Úµï¿½
 		request.setCharacterEncoding("UTF-8");
 		
-		// getParameter()À» ÀÌ¿ëÇÏ¿© input ÅÂ±×ÀÇ name ¼Ó¼º °ªÀ¸·Î Àü¼ÛµÈ value¸¦ ¹ÞÀ½.
+		// getParameter()ï¿½ï¿½ ï¿½Ì¿ï¿½ï¿½Ï¿ï¿½ input ï¿½Â±ï¿½ï¿½ï¿½ name ï¿½Ó¼ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ûµï¿½ valueï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½.
 		String user_id = request.getParameter("user_id");
 		String user_pw = request.getParameter("user_pw");
 		
