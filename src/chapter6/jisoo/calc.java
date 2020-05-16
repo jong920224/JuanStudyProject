@@ -43,16 +43,16 @@ public class calc extends HttpServlet {
 		String won = request.getParameter("won");
 		String operator = request.getParameter("operator");
 		
-		// °á°ú°ª
+		// ï¿½ï¿½ï¿½ï¿½ï¿½
 		String result = calculate(Float.parseFloat(won), operator);
 		
-		// Ãâ·Â
+		// ï¿½ï¿½ï¿½
 		PrintWriter pw = response.getWriter();
 		
-		pw.print("<html><font size=10>º¯È¯°á°ú</font><br>");
+		pw.print("<html><font size=10>ï¿½ï¿½È¯ï¿½ï¿½ï¿½</font><br>");
 		pw.print("<html><font size=10>type : " + operator+ "</font><br>");
 		pw.print("<html><font size=10>" + result + "</font><br>");
-		pw.print("<a href='/chapter6_jisoo?param=exam4'>µ¹¾Æ°¡±â </a>");
+		pw.print("<a href='/chapter6_jisoo?param=exam4'>ï¿½ï¿½ï¿½Æ°ï¿½ï¿½ï¿½ </a>");
 		
 	}
 

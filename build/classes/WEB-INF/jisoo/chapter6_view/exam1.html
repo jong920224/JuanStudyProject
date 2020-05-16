@@ -1,0 +1,56 @@
+<!DOCTYPE html> 
+<html lang="ko"> 
+<head> 
+	<meta charset="utf-8"> 
+	<title>예제 1번</title> 
+</head>
+<body>
+<script>
+	
+	// 로그인 전 이벤트 함수
+	function value_check() 
+	{
+		// form
+		var frm = document.frm;
+		var type = "";
+		var cnt = 0;	// 체크된 수
+		
+		// checkbox length
+	    var check_count = document.getElementsByName("method").length;
+	
+	    for (var i=0; i<check_count; i++) {
+	    	
+	    	// 체크가 되어있으면 해당 value값을 form method방식을 지정
+	        if (document.getElementsByName("method")[i].checked == true) {
+				type = document.getElementsByName("method")[i].value
+				console.log(type);
+				cnt++; // 체크 카운트
+	        }
+	    }
+	    
+	    // checked == checkbox count
+	    if(cnt == check_count) {
+	    	alert('하나만 체크해주세요.');
+	    	return;
+	    }
+	    
+	    // frm 전송 방식지정
+	    frm.method = type;
+	    frm.action = "login";
+	    frm.submit();
+	}
+	
+</script>
+
+	<h1>예제 1번</h1>
+	<input type="checkbox" name="method" value="get" checked>GET방식
+	<input type="checkbox" name="method" value="post">POST방식
+	
+	<form name ="frm" encType="utf-8">
+		아이디 : <input type="text" name="user_id">	
+		비밀번호 : <input type="password" name="user_pw">
+		<input type="button" value="로그인" onclick="value_check();">
+	</form>
+	
+</body>
+</html>

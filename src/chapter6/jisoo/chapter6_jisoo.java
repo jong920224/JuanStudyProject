@@ -21,7 +21,7 @@ public class chapter6_jisoo extends HttpServlet {
      */
     public chapter6_jisoo() {
         super();
-        // TODO Auto-generated constructor stub
+       
     }
 
 	/**
@@ -41,7 +41,7 @@ public class chapter6_jisoo extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
+		
 		doGet(request, response);
 	}
 

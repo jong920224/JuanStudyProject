@@ -21,13 +21,15 @@ public class login extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 		// HttpServletRequest
-		// À¥ ºê¶ó¿ìÀú¿¡¼­ Àü¼ÛÇÑ Á¤º¸¸¦ ÅèÄ¹ ÄÁÅ×ÀÌ³Ê°¡ HttpServletRequest °´Ã¼¸¦ »ı¼ºÇÑ ÈÄ doGetÀ¸·Î ³Ñ°ÜÁÜ
+		// å ì™ì˜™ å ì™ì˜™å ì™ì˜™å ì™ì˜™å ì™ì˜™å ì™ì˜™ å ì™ì˜™å ì™ì˜™å ì™ì˜™ å ì™ì˜™å ì™ì˜™å ì™ì˜™ å ì™ì˜™ìº£ å ì™ì˜™å ì™ì˜™å ì‹±ë„ˆê³¤ì˜™ HttpServletRequest å ì™ì˜™ì²´å ì™ì˜™ å ì™ì˜™å ì™ì˜™å ì™ì˜™ å ì™ì˜™ doGetå ì™ì˜™å ì™ì˜™ å ì‹¼ê³¤ì˜™å ì™ì˜™
 		
-		// Àü¼Û µÉ µ¥ÀÌÅÍ¸¦ UTF-8·Î ÀÎÄÚµù
+		// å ì™ì˜™å ì™ì˜™ å ì™ì˜™ å ì™ì˜™å ì™ì˜™å ì‹¶ëªŒì˜™ UTF-8å ì™ì˜™ å ì™ì˜™å ìŒ˜ë“¸ì˜™
 		request.setCharacterEncoding("UTF-8");
 		
+
 		
-		// getParameter()À» ÀÌ¿ëÇÏ¿© input ÅÂ±×ÀÇ name ¼Ó¼º °ªÀ¸·Î Àü¼ÛµÈ value¸¦ ¹ŞÀ½.
+		// getParameter()ì„ ì´ìš©í•˜ì—¬ input íƒœê·¸ì˜ name ì†ì„± ê°’ìœ¼ë¡œ ì „ì†¡ëœ valueë¥¼ ë°›ìŒ.
+
 		String user_id = request.getParameter("user_id");
 		String user_pw = request.getParameter("user_pw");
 		
@@ -40,12 +42,12 @@ public class login extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 		// HttpServletRequest
-		// À¥ ºê¶ó¿ìÀú¿¡¼­ Àü¼ÛÇÑ Á¤º¸¸¦ ÅèÄ¹ ÄÁÅ×ÀÌ³Ê°¡ HttpServletRequest °´Ã¼¸¦ »ı¼ºÇÑ ÈÄ doGetÀ¸·Î ³Ñ°ÜÁÜ
+		// ì›¹ ë¸Œë¼ìš°ì €ì—ì„œ ì „ì†¡í•œ ì •ë³´ë¥¼ í†°ìº£ ì»¨í…Œì´ë„ˆê°€ HttpServletRequest ê°ì²´ë¥¼ ìƒì„±í•œ í›„ doGetìœ¼ë¡œ ë„˜ê²¨ì¤Œ
 		
-		// Àü¼Û µÉ µ¥ÀÌÅÍ¸¦ UTF-8·Î ÀÎÄÚµù
+		// ì „ì†¡ ë  ë°ì´í„°ë¥¼ UTF-8ë¡œ ì¸ì½”ë”©
 		request.setCharacterEncoding("UTF-8");
 		
-		// getParameter()À» ÀÌ¿ëÇÏ¿© input ÅÂ±×ÀÇ name ¼Ó¼º °ªÀ¸·Î Àü¼ÛµÈ value¸¦ ¹ŞÀ½.
+		// getParameter()ì„ ì´ìš©í•˜ì—¬ input íƒœê·¸ì˜ name ì†ì„± ê°’ìœ¼ë¡œ ì „ì†¡ëœ valueë¥¼ ë°›ìŒ.
 		String user_id = request.getParameter("user_id");
 		String user_pw = request.getParameter("user_pw");
 		
