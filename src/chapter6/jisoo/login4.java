@@ -17,7 +17,7 @@ public class login4 extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     public login4() {
-    	System.out.println("init ¸Þ¼­µå È£Ãâ");
+    	System.out.println("init ï¿½Þ¼ï¿½ï¿½ï¿½ È£ï¿½ï¿½");
     }
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -32,17 +32,17 @@ public class login4 extends HttpServlet {
 		
 		String data = "<html>";
 		
-		// ¾ÆÀÌµð ÆÐ½º¿öµå ÀÔ·Â°ªÀÌ ÀÖÀ¸¸é
+		// í…ŒìŠ¤íŠ¸
 		if((id.length() > 0 || !id.equals("")) && pw.length() > 0 || !pw.equals("")) 
 		{
 			data += "<body>";
 			
-			// admin °èÁ¤ÀÏ °æ¿ì
+			// admin ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½
 			if(id.equals("admin") && pw.equals("admin")) 
 			{
-				data += "[°ü¸®ÀÚ]·Î ·Î±×ÀÎ ÇÏ¿´½À´Ï´Ù.!";
+				data += "[ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½]ï¿½ï¿½ ï¿½Î±ï¿½ï¿½ï¿½ ï¿½Ï¿ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.!";
 			} else {
-				data += "¾ÆÀÌµð : " + id +"´Ô ·Î±×ÀÎ ¼º°ø!";
+				data += "ï¿½ï¿½ï¿½Ìµï¿½ : " + id +"ï¿½ï¿½ ï¿½Î±ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½!";
 			}
 			
 			data += "<br>";
@@ -51,10 +51,10 @@ public class login4 extends HttpServlet {
 			data += "</body>";
 		} else {
 			data += "<body>";
-			data += "¾ÆÀÌµð¸¦ ÀÔ·ÂÇÏ¼¼¿ä.";
+			data += "ï¿½ï¿½ï¿½Ìµï¿½ ï¿½Ô·ï¿½ï¿½Ï¼ï¿½ï¿½ï¿½.";
 			data += "<br>";
 			data += "<br>";
-			data += "<a href='/chapter6_jisoo?param=exam6'>·Î±×ÀÎ È­¸éÀ¸·Î</a>";
+			data += "<a href='/chapter6_jisoo?param=exam6'>ï¿½Î±ï¿½ï¿½ï¿½ È­ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½</a>";
 			data += "</html>";
 			data += "</body>";
 		}
@@ -63,6 +63,6 @@ public class login4 extends HttpServlet {
 	}
 	
 	public void destroy() {
-		System.out.println("destroy ¸Þ¼­µå È£Ãâ");
+		System.out.println("destroy ï¿½Þ¼ï¿½ï¿½ï¿½ È£ï¿½ï¿½");
 	}
 }
